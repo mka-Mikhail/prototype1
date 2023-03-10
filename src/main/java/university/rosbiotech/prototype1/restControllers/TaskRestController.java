@@ -28,12 +28,6 @@ public class TaskRestController {
         return taskConverter.entityToDto(task);
     }
 
-    @GetMapping("/{title}")
-    public TaskDto getByTitle(@PathVariable String title) {
-        Task task = taskService.findByTitle(title).orElseThrow(() -> new ResourceNotFoundException("Task not found"));
-        return taskConverter.entityToDto(task);
-    }
-
     @PostMapping("/create")
     public TaskDto createNewTask(@RequestBody TaskDto taskDto) {
         Task task = taskService.createNewTask(taskDto);
