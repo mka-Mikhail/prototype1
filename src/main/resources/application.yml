@@ -4,8 +4,8 @@ server:
     context-path: /project-management-system
 spring:
   datasource:
-    url: jdbc:h2:mem:project-management-system
     driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:project-management-system
     username: sa
     password:
   jpa:

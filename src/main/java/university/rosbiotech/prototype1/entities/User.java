@@ -25,6 +25,4 @@ public class User {
     @Enumerated(value = EnumType.STRING)
     @Column(name = "status")
     private Status status;
-    /*@OneToOne(mappedBy = "owner")
-    private Task task;*/
 }
