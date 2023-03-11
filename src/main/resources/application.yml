@@ -18,3 +18,7 @@ spring:
       enabled: true
       settings:
         web-allow-others: false
+jwt:
+  secret-key: ^dfW_+6@sAdvO)sd!p[s]m*
+  expiration: 600800
+  header: Authorization

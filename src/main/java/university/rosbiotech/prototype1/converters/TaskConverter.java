@@ -8,6 +8,7 @@ import university.rosbiotech.prototype1.entities.Task;
 @Component
 @RequiredArgsConstructor
 public class TaskConverter {
+
     public TaskDto entityToDto(Task task) {
         return new TaskDto(task.getId(), task.getTitle(), task.getDescription());
     }

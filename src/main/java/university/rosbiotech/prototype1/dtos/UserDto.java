@@ -25,4 +25,10 @@ public class UserDto {
         this.first_name = first_name;
         this.last_name = last_name;
     }
+
+    public UserDto(Long id, String first_name, String last_name) {
+        this.id = id;
+        this.first_name = first_name;
+        this.last_name = last_name;
+    }
 }
